@@ -30,7 +30,7 @@ lis1=[t1,n5,n6]
 print(lis1)
 lis2=[t2,n8,n9]
 print(lis2)
-print("------------------------------------------------")
+print("------------------------------------------------")#holaaaaaaaaa
 l3=[n1,n4,n7]
 dicc={"Nombre":n}
 dicc1={"Materias":l3}
