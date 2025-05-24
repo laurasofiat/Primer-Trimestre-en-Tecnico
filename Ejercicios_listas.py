@@ -23,7 +23,7 @@ print("El número mayor es:",{max(números)},"y el número nmenor es: ",{min(nú
 print("Ejercicio 4")
 list=["Mariana","Julia","Abigail","Salomé","Carol","Sara","Luisa"]
 print(list)
-list.insert(7,"JULIANA") #holaaaaa 
+list.insert(7,"JULIANA") 
 print(list)
 ll=len(list)
 print(ll,"Nombres")
