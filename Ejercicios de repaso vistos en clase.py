@@ -1,4 +1,4 @@
-print("Clase 1,slución de ejercicios")
+print("Clase 1,slución de ejercicios") #Repaso
 print("----------------------------------------")
 a=5
 b=5
