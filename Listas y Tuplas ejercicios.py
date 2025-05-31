@@ -16,7 +16,7 @@ print(m4)
 m5=(33,"Azul","Rojo","Amarillo",m4) #Ejercicio 7.
 print(m5)
 m6=m4[0]
-# print(m6)
+print(m6)
 print("Taller Tuplas y Listas")
 print("------------------------------------------------------------")
 print("Ejercicio 1")
