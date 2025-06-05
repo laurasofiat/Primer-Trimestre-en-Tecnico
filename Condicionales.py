@@ -1,26 +1,25 @@
 edad=int(input("Ingrese su edad:"))
 if edad>=18: #El if=si, se cumple esa función.
-    print("Es mayor de edad")
+    print("Usted es mayor de edad")
 else: print("Usted es menor de edad") #El else=si no, se cumple esa función.
-print("fin")
 print("---------------------------------------------")
-com=input("¿Usted come carne?")
+com=input("¿Usted come carne(sí o no)?")
 if com=="no": #Se pueden hacer multiples ifs, lo cual sería identación logrando una sentencia.
     print("Usted es vegetariano o vegano.")
 else: print("Usted no es vegano o vegetariano.")
-print("fin")
 print("---------------------------------------------")
 x=int(input("Ingrese un número entero:"))
-if x>=10:
-    print("El número es mayor a 10.")
-else: print("El número está por debajo del 10.")
+if x>=50:
+    print("El número es mayor a 50.")
+else: print("El número está por debajo del 50.")
 print("---------------------------------------------")
 m1=int(input("Ingrese un número entero:"))
 m2=int(input("Ingrese un número entero:"))
 mul=m1*m2
+print(mul)
 if mul<500:
     print("El resultado de la multiplicación es un número menor a 500.")
-elif mul>=500: #El elif=si no,si
+elif mul>=500 and mul<=999: #El elif=si no,si
     print("El resultado de la multiplicación es un número mayor a 500.")
 elif mul>=1000:
      print("El resultado de la multiplicación es un número mayor a 1000.")
@@ -29,15 +28,15 @@ print("---------------------------------------------")
 #Programa creado.
 print("Generaciones digitales.")
 año=int(input("Ingrese su año de nacimiento:"))
-if año<=1945:
+if año>=1920 and año<=1945:
     print("Usted es de la generación silenciosa.")
-elif año<=1964:
+elif año>=1946 and año<=1964:
      print("Usted es de la generación Bommer.")
-elif año<=1979:
+elif año>=1965 and año<=1979:
     print("Usted es de la generación X.")
-elif año<=2000:
+elif año>=1980 and año<=2000:
     print("Usted es de la generación Y.")
-elif año<=2010:
+elif año>=2011 and año<=2010:
     print("Usted es de la generación Z.")
 elif año>2010:
     print("Usted es de la generación de Nativos Digitales.")
