@@ -15,7 +15,7 @@ v3=float(input("Ingrese un número:"))
 if v2>v3:
     print("El número primer número ingresado es mayor al segundo número ingresado.")
 elif v2<v3:
-    print("El número primer número ingresado es mayor al segundo número ingresado.")
+    print("El número primer número ingresado es menor al segundo número ingresado.")
 print("---------------------------------------------------")
 print("Ejercicio 3")#Lo haré en la proxima clase profe, no entendí y preferí continuar :).
 print("---------------------------------------------------")
@@ -38,7 +38,7 @@ print("---------------------------------------------------")
 print("Ejercicio 6.")
 v7=float(input("Ingrese precio:"))
 if v7>=100:
-    rs=(10/100)*100
+    rs=(10/v7)*100
     print("El 10 porciento de 100 es:",rs)
 else: print("El número no cumple con los requisitos,no se calculará porcentaje.")
 print("---------------------------------------------------")
@@ -52,7 +52,7 @@ print("Ejercicio 8")
 v9=float(input("Ingrese precio:"))
 v10=input("¿Usted es cliente VIP o normal?")
 if v10=="VIP":
-    rs1=(20/v10)*100
+    rs1=(20/v9)*100
     print("El descuento se ha realizado,descuento de:",rs1,"%")
 else: print("No cumple con los requisitos, no se hará descuento de 20%")
 print("---------------------------------------------------")
