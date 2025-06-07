@@ -46,7 +46,7 @@ if v7>=100:
 else: print("El número no cumple con los requisitos,no se calculará porcentaje.")
 print("---------------------------------------------------")
 print("Ejercicio 7")
-v8=input("¿Cuántos años tienes?")
+v8=float(input("¿Cuántos años tienes?"))
 if v8>=18:
     print("Puedes votar.")
 else: print("No cumple con los requisitos, no puede votar.")
