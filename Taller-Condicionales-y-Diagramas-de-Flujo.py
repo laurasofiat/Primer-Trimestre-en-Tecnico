@@ -5,16 +5,14 @@ if v1==0:
     print("El número ingresado es cero.")
 elif v1>=1:
     print("El número ingresado es positivo.")
-elif v1<=-1:
-    print("El número ingresado es negativo.")
+else: print("El número ingresado es negativo.")
 print("---------------------------------------------------")
 print("Ejercicio 2")
 v2=float(input("Ingrese un número:"))
 v3=float(input("Ingrese un número:"))
 if v2>v3:
     print("El número primer número ingresado es mayor al segundo número ingresado.")
-elif v2<v3:
-    print("El número primer número ingresado es menor al segundo número ingresado.")
+else:print("El número segundo número ingresado es mayor al primer número ingresado.")
 print("---------------------------------------------------")
 print("Ejercicio 3")
 v=float(input("ingrese un número:"))
@@ -23,8 +21,8 @@ if v %2==0:
 else: print("El número es impar.")
 print("---------------------------------------------------")
 print("Ejercicio 4")
-v=int(input("Ingrese un número:"))
-if v>=10 and v<=20: #and=y---Es una condición.
+vn=int(input("Ingrese un número:"))
+if vn>=10 and vn<=20: #and=y---Es una condición.
     print("El número se encuentra entre 10 y 20.")
 else: print("El número no se encuentra entre 10 y 20.")
 print("---------------------------------------------------")
@@ -39,7 +37,7 @@ elif v5>v4 and v5>v6:
 else: print(v6,"Es el número mayor.")
 print("---------------------------------------------------")
 print("Ejercicio 6.")
-v7=float(input("Ingrese precio:"))
+v7=float(input("Ingrese un número:"))
 if v7>=100:
     rs=(10/v7)*100
     print("El 10 porciento de 100 es:",rs)
@@ -48,7 +46,7 @@ print("---------------------------------------------------")
 print("Ejercicio 7")
 v8=float(input("¿Cuántos años tienes?"))
 if v8>=18:
-    print("Puedes votar.")
+    print("Puede votar.")
 else: print("No cumple con los requisitos, no puede votar.")
 print("---------------------------------------------------")
 print("Ejercicio 8")
@@ -73,25 +71,25 @@ if v12%2==0 and v12%4==0:
 else: print("El número ingreado no se puede dividir entre 2 y 4.")
 print("-----------------------------------------------------")
 print("Ejercicio 11")
-lis1=[2,4,6,8,10]
+lis1=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
 print(lis1)
 vv=lis1[2]
 print(vv)
 if vv>10:
-    print("El número 6 es mayor a 10.")
-else: print("El número 6 no es mayor a 10.")
+    print("El número",vv,"es mayor a 10.")
+else: print("El número",vv,"no es mayor a 10.")
 print("-----------------------------------------------------")
 print("Ejercicio 12")
-lis2=[3,5,7,9]
+lis2=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
 print(lis2)
 vv1=lis2.index==7
 if vv1=="true":
-    print(" Está en la lista.")
-else: print("No está en la lista.")
+    print("El número 7 está en la lista.")
+else: print("El número 7 no está en la lista.")
 print("-----------------------------------------------------")
 print("Ejercicico 13")
-lis3=[4,6,2,8]
-print(lis2)
+lis3=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+print(lis3)
 vv2=lis3[0]+lis3[3]
 print(vv2)
 if vv2>=10:
@@ -99,7 +97,7 @@ if vv2>=10:
 else: print("Suma baja.")
 print("-----------------------------------------------------")
 print("Ejercicio 14")
-lis4= ["Ana", "Luis", "Pedro", "Marta"]
+lis4= [input("Ingrese un nombre:"),input("Ingrese un nombre:"),input("Ingrese un nombre:"),input("Ingrese un nombre:")]
 print(lis4)
 vv3=lis4[3]
 print(vv3)
@@ -110,7 +108,7 @@ print("-----------------------------------------------------")
 print("Ejercicico 15")
 lis5=[input("Ingrese un color:"),input("Ingrese un color:"),input("Ingrese un color:")]
 print(lis5)
-if lis5[2]=="azul" or lis5[2]=="Azul": 
+if lis5[2]=="azul": 
     vv5=input("Ingrese otro color diferente a azul:")
     lis5[-1]=vv5
     print(lis5)
@@ -118,54 +116,84 @@ else: print("La lista de colores cumple con la condición.")
 print("-------------------------------------------------------")
 print("Tuplas y Condicionales")
 print("Ejercicio 16")
-tup=(5, 8, 12, 20)
+lis6=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+tup=tuple(lis6)
 print(tup)
 if tup[0]<tup[3]:
     print("Orden ascendente.")
 else: print("Orden descendente.")
 print("-------------------------------------------------------")
 print("Ejercicio 17")
-tup1= (25, 32, 28)
+lis7=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+tup1=tuple(lis7)
 print(tup1)
-if tup1[1]>tup[2]:
+if tup1[1]>30:
     print("Edad mayor a 30.")
 else: print("Edad menor o igual a 30.")
 print("-------------------------------------------------------")
 print("Ejercicio 18")
-tup2=(1, 2, 3)
+lis8=[float(input("Ingrese un número:")),float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+if lis8[1]==2:
+    lis8[1]==10
+    tup2=tuple(lis8)
+    print(tup2)
+else: tup2=tuple(lis8) 
 print(tup2)
-v13=list(tup2)
-print(tup2)
-if tup2[1]==2:
-    v13[1]=10
-    v14=tuple(v13)
-    print(v14)
-else: print("Cumple con la condición.")
 print("---------------------------------------------------------")
 print("Ejercicio 19")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+lis9=[float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+tup3=tuple(lis9)
+print(lis9)
+if tup3[1]>5:
+    print("Coordenada alta")
+else: print("Coordenada baja")
+print("---------------------------------------------------------")
+print("Ejercicio 20")
+lis10=[float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+lis11=[float(input("Ingrese un número:")),float(input("Ingrese un número:"))]
+tup4=tuple(lis10)
+tup5=tuple(lis11)
+print(tup4)
+print(tup5)
+if tup4==tup5:
+    print("Tuplas iguales.")
+else: print("Tuplas diferentes.")
+print("---------------------------------------------------------")
+print("Ejercicio 21")
+v13=input("Ingrese nombre:")
+v14=int(input("Ingrese edad:"))
+dic={"Nombre":v13}
+dic1={"Edad":v14}
+print(dic,dic1)
+if v14>=18:
+    print("Adulto")
+else: print("Menor de edad.")
+print("---------------------------------------------------------")
+print("Ejercicio 22")
+v15=input("Ingrese nombre:")
+v16=int(input("Ingrese edad:"))
+dic2={"Nombre":v15}
+dic3={"Edad":v16}
+print(dic,dic1)
+if v16>18:
+    dic3(v16)==21
+    print(dic3)
+else: print("El diccionario cumple con los requisitos.")
+print("---------------------------------------------------------")
+print("Ejercicio 23")
+v17=input("Ingrese nombre:")
+v18=input("¿Desea agregar ciudad?")
+if v18=="no":
+    v19="Bogotá"
+    dic5={"Nombre":v17}
+    dic6={"Ciudad":v19}
+    print(dic5,dic6)
+else: v19=input("Ingrese Ciudad:")
+dic5={"Nombre":v17}
+dic6={"Ciudad":v19}
+print(dic5,dic6)
+print("---------------------------------------------------------")
+print("Ejercicio 24")
 
 
 
