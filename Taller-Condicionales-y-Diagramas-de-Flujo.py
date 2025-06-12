@@ -203,9 +203,9 @@ if v21=="no":
     print("No hay precio")
 elif v21=="si":
     v22=float(input("Ingrese precio:"))
-    dic7={"Producto":v20}
-    dic8={"precio":v21}
-    print(dic7,dic8)
+    d7={"Producto":v20}
+    d8={"precio":v21}
+    print(d7,d8)
 else: print("Respuesta Incorrecta.")
 print("---------------------------------------------------------")
 print("Ejercicio 25")
