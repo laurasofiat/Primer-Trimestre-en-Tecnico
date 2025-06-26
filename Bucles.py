@@ -22,17 +22,16 @@
 #     if v4%2==1:
 #          print("Número impar")
 #     else: print("Número par")
-lis=[ ] #Ejercicio 5
-v5=float(input("Empieza a ingresar notas entre comillas(si deseas terminar la lista ingresa salir):"))
-while v5!="salir":
+lis1=[ ] #Ejercicio 5
+v5=float(input("Ingresa una nota:"))    
+v6=input("¿Deseas dejar de agregar notas?. Agrega salir para confirmar:")
+while v6!="salir":
     v5=float(input("Ingresa una nota:"))
     lis1+=[v5]
-    print(lis)
-    v6=[v5].count
-    lis1/v6
-    print("promedio:",lis1)
-    
-
+    print(v5)
+    if v6=="salir":
+        v7=lis1/v5
+        print("Promedio:",v7)
 
     
 
